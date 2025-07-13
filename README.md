@@ -23,12 +23,19 @@ A modern, responsive portfolio website showcasing my skills and experience as a 
 1. **Hero Section**: Introduction with professional photo and call-to-action buttons
 2. **About**: Personal introduction and key statistics
 3. **Skills**: Technical skills with animated progress bars
-   - .NET Technologies (C#, ASP.NET Core, Entity Framework, Web API)
-   - Frontend & Database (JavaScript, HTML/CSS, SQL Server, React)
-   - Tools & Cloud (Azure, Git, Docker, Visual Studio)
+   - Programming Languages (C#, JavaScript, TypeScript, SQL/T-SQL)
+   - Frameworks & Technologies (ASP.NET Core, .NET Framework, ASP.NET MVC, Entity Framework Core)
+   - Cloud & Integration (Azure Functions, Power BI, TeamCity CI/CD, QuickBooks Integration)
 4. **Projects**: Featured portfolio projects with technology stacks
-5. **Education & Experience**: Timeline of professional journey at Enosis Solutions
-6. **Contact**: Contact form and social media links
+   - QuickBooks Integration Platform
+   - Business Intelligence Dashboard
+   - CI/CD Pipeline & DevOps Platform
+5. **Achievements**: IEEE awards, publications, and professional strengths
+   - IEEE SS12 Innovation Challenge 2018 (Finalist - Top 5)
+   - IEEE SS12 Macroinnovators 2018 (Champion)
+   - IEEE Publication 2020: Multi-Modal Human Machine Interface
+6. **Education & Experience**: Timeline of professional journey at Enosis Solutions
+7. **Contact**: Contact form and social media links
 
 ## 🚀 Getting Started
 

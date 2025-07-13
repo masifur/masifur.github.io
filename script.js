@@ -87,10 +87,7 @@ const observer = new IntersectionObserver((entries) => {
                 setTimeout(animateSkillBars, 500);
             }
             
-            // Animate stats counters
-            if (entry.target.classList.contains('stat')) {
-                animateCounter(entry.target);
-            }
+            // Stats animation disabled - using static values
         }
     });
 }, observerOptions);
@@ -100,26 +97,16 @@ sections.forEach(section => {
     observer.observe(section);
 });
 
-// Observe stats for counter animation
-document.querySelectorAll('.stat').forEach(stat => {
-    observer.observe(stat);
-});
+// Stats observer removed - using static values instead of animation
 
-// Counter animation for stats
+// Counter animation for stats - DISABLED to preserve static values
 function animateCounter(element) {
-    const target = parseInt(element.querySelector('h3').textContent);
-    const duration = 2000;
-    const increment = target / (duration / 16);
-    let current = 0;
-    
-    const timer = setInterval(() => {
-        current += increment;
-        if (current >= target) {
-            current = target;
-            clearInterval(timer);
-        }
-        element.querySelector('h3').textContent = Math.floor(current) + (target >= 100 ? '+' : '');
-    }, 16);
+    // Animation disabled to maintain accurate static stats
+    // The stats are now displayed as static values:
+    // - 4+ Major Projects
+    // - 4+ Years Experience  
+    // - 80% U.S. Broadcast Groups
+    return;
 }
 
 // Contact form handling

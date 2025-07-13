@@ -1,0 +1,230 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.1.4, 27 July 2018) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons 
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font 
+%% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Navy}{HTML}{000080}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{444444}
+\colorlet{heading}{Navy}
+\colorlet{accent}{Navy}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\usepackage[colorlinks]{hyperref}
+
+\begin{document}
+
+\name{M. Asifur Rahman}
+\tagline{Senior .NET Web Developer}
+% \photo{2.8cm}{Globe_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{asifurarahman@gmail.com}
+  \phone{(+880) 1886950951}
+%  \mailaddress{Address, Street, 00000 County}
+  \location{Dhaka, Bangladesh}
+  \homepage{masifur.github.io}
+%  \twitter{@marissamayer}
+  \linkedin{asifurarahman}
+   \github{masifur}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+%   \orcid{orcid.org/0000-0000-0000-0000}
+}
+
+%% Make the header extend all the way to the right, if you want. 
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{Senior Software Engineer III}{Enosis Solutions}{Oct 2024 -- Present}{Dhaka, Bangladesh}
+\begin{itemize}
+\item Lead development on Matrix Solutions' Monarch platform serving 80\% of large U.S. broadcast groups including Nexstar, Hearst, and Gray Television
+\item Architect scalable solutions using ASP.NET Core, Azure Functions, and Microsoft SQL Server for high-volume media sales operations
+\item Mentor junior developers and contribute to technical decision-making for enterprise-level applications
+\end{itemize}
+
+\divider
+
+\cvevent{Senior Software Engineer II}{Enosis Solutions}{Oct 2023 -- Oct 2024}{Dhaka, Bangladesh}
+\begin{itemize}
+\item Developed web applications using ASP.NET Core and Web API with focus on performance optimization and scalability
+\item Designed database solutions using Microsoft SQL Server for complex business requirements
+\end{itemize}
+
+\divider
+
+\cvevent{Senior Software Engineer I}{Enosis Solutions}{Oct 2022 -- Oct 2023}{Dhaka, Bangladesh}
+\begin{itemize}
+\item Built web applications using ASP.NET MVC with QuickBooks integration for financial operations
+\item Optimized database performance and implemented stored procedures in Microsoft SQL Server
+\end{itemize}
+
+\divider
+
+\cvevent{Software Engineer II}{Enosis Solutions}{Oct 2021 -- Oct 2022}{Dhaka, Bangladesh}
+\begin{itemize}
+\item Developed business management applications using ASP.NET MVC with QuickBooks integration
+\item Created comprehensive data solutions and reporting systems using Microsoft SQL Server
+\end{itemize}
+
+\divider
+
+\cvevent{Software Engineer I}{Enosis Solutions}{Oct 2020 -- Oct 2021}{Dhaka, Bangladesh}
+\begin{itemize}
+\item Developed applications using .NET Framework and Microsoft SQL Server
+\item Created business intelligence solutions using Microsoft Power BI for data visualization
+\end{itemize}
+
+\cvsection{Education}
+
+\cvevent{Bachelor of Science in Computer Science}{Khulna University of Engineering and Technology}{2016 -- 2020}{Khulna, Bangladesh}
+
+\cvsection{Projects}
+
+\cvevent{Matrix Solutions - Monarch Media CRM Platform}
+{\MakeLowercase{ASP.NET CORE, AZURE FUNCTIONS, MICROSOFT SQL SERVER}}{Oct 2024 -- Present}{}
+\begin{itemize}
+\item Currently developing enterprise-level media CRM platform serving 80\% of large U.S. broadcast groups
+\item Implementing scalable cloud-based solutions with robust API integrations for media sales operations
+\end{itemize}
+\medskip
+\divider
+
+\cvevent{Dynamic 365 Finance Operations}
+{\MakeLowercase{MICROSOFT POWER BI, MICROSOFT SQL SERVER, TYPESCRIPT}}{2022 -- 2024}{}
+\begin{itemize}
+\item Developed comprehensive reporting and data visualization platform with seamless application integration
+\item Built interactive dashboards and reports using Power BI and SSRS for financial data analysis
+\end{itemize}
+\medskip
+\divider
+
+\cvevent{Story-Sharing Social Platform}
+{\MakeLowercase{ASP.NET CORE, MICROSOFT SQL SERVER}}{2021 -- 2022}{}
+\begin{itemize}
+\item Built content-sharing platform with role-based access control for creating and sharing personal stories
+\item Implemented secure authentication and authorization systems with multiple access levels
+\end{itemize}
+\medskip
+\divider
+
+\cvevent{Integrated Business Management \& E-commerce Platform}
+{\MakeLowercase{.NET FRAMEWORK, MICROSOFT SQL SERVER, JAVASCRIPT}}{2020 -- 2021}{}
+\begin{itemize}
+\item Developed comprehensive web application with Back Office management and Online Store components
+\item Created seamless integration between business operations and customer shopping experience
+\end{itemize}
+
+\clearpage
+
+\end{document}
+
+%% page1sidebar.tex
+%% This file should be saved as page1sidebar.tex and placed in the same directory as your main resume file
+%% Do NOT compile this file directly - it gets included automatically by the main resume
+
+\cvsection{Technical Skills}
+
+\cvsubsection{Programming Languages}
+\cvtag{C\#} \cvtag{JavaScript} \cvtag{TypeScript} \cvtag{SQL} \cvtag{T-SQL}
+
+\divider
+
+\cvsubsection{Frameworks \& Technologies}
+\cvtag{ASP.NET Core} \cvtag{.NET Framework} \cvtag{ASP.NET MVC} \cvtag{Web API} \cvtag{Entity Framework Core} \cvtag{RESTful APIs}
+
+\divider
+
+\cvsubsection{Cloud \& DevOps}
+\cvtag{Azure Functions} \cvtag{TeamCity} \cvtag{LaunchDarkly} \cvtag{Git} \cvtag{CI/CD}
+
+\divider
+
+\cvsubsection{Databases \& BI}
+\cvtag{Microsoft SQL Server} \cvtag{SSRS} \cvtag{Power BI} \cvtag{Stored Procedures}
+
+\divider
+
+\cvsubsection{Integration \& Tools}
+\cvtag{QuickBooks} \cvtag{Visual Studio} \cvtag{Third-party APIs}
+
+\cvsection{Honors \& Awards}
+
+\cvachievement{\faTrophy}{IEEE SS12 Innovation Challenge 2018}{Finalist (Top 5) among 26 teams from 8 countries, Colombo, Sri Lanka}
+
+\cvachievement{\faTrophy}{IEEE SS12 Macroinnovators 2018}{Champion - Technical innovation excellence}
+
+\cvsection{Publications}
+
+\cvachievement{\faFileTextO}{IEEE Publication 2020}{A Multi-Modal Human Machine Interface for Controlling a Smart Wheelchair}
+
+\smallskip
+\small{Multi-modal interface combining gesture, head, and eye tracking for wheelchair control}
+
+\cvsection{Strengths}
+
+\cvtag{Problem Solving} \cvtag{Team Leadership} \cvtag{Mentoring} \cvtag{Agile Development} \cvtag{Code Review} \cvtag{System Architecture}
+
